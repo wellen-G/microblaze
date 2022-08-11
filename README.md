@@ -11,3 +11,12 @@ GPIO中断的实现利用vio IP核实现，16位的VIO接到GPIO作为输入来�
 UART中断外接串口调试助手或者直接利用SDK terminal实现。
 
 concat IP核将多个中断源合成一条总线提供给中断管理器。
+
+### 实验结果
+
+jtag调试段循环输出hello word
+![image](https://user-images.githubusercontent.com/109273341/184083396-5228a015-8fe9-44bb-9b43-197054862c6b.png)
+ILA抓取的GPIO_o实现0000——FFFF的转换
+
+GPIO_t为0xffff，说明16个gpio全为输入，至于GPIO_o为什么会实现数据转换，这是因为此时的信号还没有经过三态门的转换，在进过三态门转换后16个gpio全为输入
+![image](https://user-images.githubusercontent.com/109273341/184083548-76f0a3b2-e396-4c98-960f-21b74a7e2aee.png)
