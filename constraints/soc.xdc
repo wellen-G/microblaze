@@ -1,0 +1,11 @@
+set_property IOSTANDARD DIFF_SSTL12 [get_ports sys_clk_p]
+set_property PACKAGE_PIN E22 [get_ports sys_clk_p]
+set_property PACKAGE_PIN AK30 [get_ports sys_rstn]
+set_property IOSTANDARD LVCMOS18 [get_ports sys_rstn]
+set_property PACKAGE_PIN AG11 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+
+set_property PACKAGE_PIN AK32 [get_ports rx]
+set_property IOSTANDARD LVCMOS18 [get_ports rx]
+set_property PACKAGE_PIN AK31 [get_ports tx]
+set_property IOSTANDARD LVCMOS18 [get_ports tx]
