@@ -1,5 +1,5 @@
 # microblaze
-## FPGA芯片选择 KU060-FFVA1156-2-I
+###### FPGA芯片选择 KU060-FFVA1156-2-I
 使用microblaze软核搭建处理器，实现中断
 ![image](https://user-images.githubusercontent.com/109273341/184079504-895b2743-2305-44b2-8aae-f9891a4ea644.png)
 其中microblaze_0为microbalze内核，外接128Kb的local memory、利用JTAG调试的mdm内核、中断管理器axi_intc以及uatr外设和GPIO外设。
